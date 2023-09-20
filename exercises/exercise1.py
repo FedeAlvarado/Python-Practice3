@@ -20,6 +20,14 @@ class Circle:
 
 
 # NO MODIFICAR - INICIO
+    def __init__(self, radio: float) -> None:
+        self.radio= radio
+    def  area(self) -> float:
+        return round(pi * self.radio**2, 2)
+    def perimetro(self) -> float:
+        return round(2*pi*self.radio,2)
+
+    
 # Test básico
 circle = Circle(1)
 assert circle.radio == 1
